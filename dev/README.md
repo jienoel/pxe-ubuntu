@@ -2,7 +2,7 @@
 ###服务器配置
 * step1 [安装ansible](../README.MD)
 
-* step2 下载配置文件: `curl -o /var/tmp/tftpboot.tar.gz http://126.io/tftpboot`
+* step2 下载配置文件(配置tftp的配置文件): `curl -o /var/tmp/tftpboot.tar.gz http://126.io/tftpboot`
 
 * step3 安装虚拟机: `ansible-playbook playbook.yml` 
 
