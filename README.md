@@ -9,7 +9,8 @@
   * `ubuntu 12.04.3 i386`
 
 ## 基础配置
-* 添加用户且安装配置ansible,则在root账户下命令行执行 `curl -L http://126.am/runway | bash -s username password ` 
+* 添加用户且安装配置ansible,则在root账户下命令行执行(获取runway.sh脚本并执行) `curl -L http://126.am/runway | bash -s username password `
+   
 
 username和password两个参数用自定义的用户名和密码替换。
 添加成功之后，可以看到`User has been added to system!`提示信息。
