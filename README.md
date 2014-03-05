@@ -1,4 +1,4 @@
-# RUNWAY
+# PXE-UBUNTU
 
 ## 通过网络自动化安装操作系统
 
