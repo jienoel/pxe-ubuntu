@@ -1,0 +1,5 @@
+deb http://sa10-001.a.ajkdns.com/ubuntu/ precise main multiverse universe restricted
+deb http://sa10-001.a.ajkdns.com/ubuntu/ precise-backports main multiverse universe restricted
+deb http://sa10-001.a.ajkdns.com/ubuntu/ precise-proposed main multiverse universe restricted
+deb http://sa10-001.a.ajkdns.com/ubuntu/ precise-security main multiverse universe restricted
+deb http://sa10-001.a.ajkdns.com/ubuntu/ precise-updates main multiverse universe restricted

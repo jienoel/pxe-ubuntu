@@ -1,0 +1,30 @@
+---
+#  - name: 1. install DHCP
+#    apt: name=isc-dhcp-server state=present
+    
+#  - name: 2. config DHCP
+#    copy: src=dhcpd.conf dest=/etc/dhcp/dhcpd.conf force=yes
+
+#  - name: 3. start DHCP
+#    service: name=isc-dhcp-server state=restarted 
+  
+#  - name: 4. install TFTP
+#    apt: name=tftpd-hpa state=present
+
+#  - name: 5. config tftp
+#    copy: src=tftpd-hpa dest=/etc/default/tftpd-hpa  
+ 
+  - unarchive: src={{ tftp_path }}/tftpboot.tar.gz dest=/var/lib/ 
+
+#  - name: 6. start TFTP
+#    service: name=tftpd-hpa state=restarted 
+
+#  - name: 7.  install Apache
+#    apt: name=apache2 state=present
+
+#  - name: 8. start Apache
+#    service: name=apache2 state=running 
+
+#  - name: 9. add script to apache server
+#    copy: src=os_preseed.seed dest=/var/www/os_preseed.seed 
+
