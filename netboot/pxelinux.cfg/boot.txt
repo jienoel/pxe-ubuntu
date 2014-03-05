@@ -1,0 +1,2 @@
+install_ubuntu12.04_amd64
+install_ubuntu12.04_i386_preseed

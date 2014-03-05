@@ -1,0 +1,14 @@
+DISPLAY /pxelinux.cfg/boot.txt
+
+DEFAULT install_ubuntu12.04_amd64
+PROMPT 5
+TIMEOUT 0
+
+LABEL auto_install_ubuntu12.04_i386
+	KERNEL ubuntu/precise/i386/vmlinuz
+	APPEND auto=true priority=critical interface=auto url=http://one-740.i.ajkdns.com/preseed/os_preseed.seed initrd=ubuntu/precise/i386/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+
+LABEL auto_install_ubuntu12.04_amd64
+	KERNEL ubuntu/precise/amd64/vmlinuz
+	APPEND auto=true priority=critical interface=auto url=http://one-740.i.ajkdns.com/preseed/os_preseed.seed initrd=ubuntu/precise/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+

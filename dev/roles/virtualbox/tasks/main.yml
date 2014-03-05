@@ -1,0 +1,8 @@
+---
+   - name: Download virtualbox file
+     get_url: dest=/var/tmp/virtualbox-4.3.deb
+       url=http://download.virtualbox.org/virtualbox/4.3.6/virtualbox-4.3_4.3.6-91406~Ubuntu~precise_amd64.deb
+   - name: Install virtualbox
+     command: dpkg --skip-same-version -i /var/tmp/virtualbox-4.3.deb
+     register: dpkg_result
+     changed_when: "dpkg_result.stdout.startswith('Selecting')"

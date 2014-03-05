@@ -1,0 +1,23 @@
+---
+- name: physic node playbook 
+  hosts: localhost
+  user: root
+  sudo: True
+  gather_facts: False 
+  roles:
+     - common
+     - virtualbox
+
+- name: virtualbox playbook 
+  hosts: $host
+  vars: 
+    #tftp_path: /home/noel/runway/dev/roles/pxe_server/files
+    tftp_path: /var/tmp
+  user: root
+  sudo: True
+  gather_facts: False 
+  roles:
+     - apt
+     - common
+     - pxe_server
+
