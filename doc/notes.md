@@ -29,7 +29,7 @@ Host loginpd
 ```
 
 *ssh密钥无效
-ssh的key没有加入到ssh-agent中，加入方法是：ssh-add id_rsa
+ssh的key没有加入到ssh-agent中，加入方法是`ssh-add id_rsa`
 
 *查看本机DNS服务器地址
 `cat /etc/resolv.conf`
