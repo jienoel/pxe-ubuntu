@@ -30,7 +30,7 @@ $ sudo apt-get install virtualbox-4.3
 虚拟机的网络设置选择Host-only Adapter，ip地址设置为172.20.100.0/24网段，并关闭其自带的DHCP服务。其他的默认即可。
 
 ###配置DHCP+TFTP+APACHE服务器
-* 将虚拟机所在的物理机作为服务器，服务器的配置和脚本的设置参见[install.md](./doc/install.md)文档。
+* 将虚拟机所在的物理机作为服务器，服务器的配置和脚本的设置参见[install.md](../doc/install.md)文档。
 
 ###配置路由转发规则
 安装过程中，选择的mirror非本地镜像，Host-only模式下的虚拟机需要连接外网时，需要设置主机的iptables。设置方法如下：
